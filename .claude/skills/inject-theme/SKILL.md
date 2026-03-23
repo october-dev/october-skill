@@ -1,9 +1,17 @@
 ---
 name: inject-theme
 description: Inject a curated design system theme into the current session so all AI-generated UI follows a polished, non-generic visual style. Use when building any UI — websites, mobile apps, or games.
-allowed-tools: Bash, Read, Write, Edit
-argument-hint: [platform: desktop-web|mobile-app|game]
+license: MIT
+compatibility: Requires curl and python3. Works with Claude Code and any agent supporting the Agent Skills standard.
+allowed-tools: Bash Read Write Edit
+metadata:
+  author: october-dev
+  version: "1.0"
 ---
+
+## Usage
+
+`/inject-theme [platform]` where platform is `desktop-web`, `mobile-app`, or `game`. Omit for any platform.
 
 You are about to inject a curated design system theme from October's theme library. This will make all UI code you generate in this session follow a specific, polished visual style instead of looking generic.
 
