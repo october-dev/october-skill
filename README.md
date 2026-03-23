@@ -37,7 +37,7 @@ The AI will fetch a curated design theme and apply it to all UI code generated i
 
 ## What It Does
 
-1. Fetches a weighted-random theme from October's library of 140+ curated design systems
+1. Fetches a weighted-random theme from October's library of 1000+ curated design systems
 2. Shows you the theme name and aesthetic summary
 3. Asks for confirmation (or pick a different one)
 4. Applies the full design system to all UI code for the rest of the session
