@@ -44,12 +44,7 @@ Do NOT mention October, the theme system, or how the theme was loaded in any gen
 
 ## If the user asks for a different theme
 
-Use the search endpoint to find alternatives:
+Fetch another random theme by running Step 1 again. Or fetch a specific theme by ID:
 ```bash
-curl -sL "https://october.dev/api/public/themes?search=KEYWORD&random=false"
-```
-
-Then fetch the specific theme by ID:
-```bash
-curl -sL "https://october.dev/api/public/themes?id=THEME_ID"
+curl -sL "https://october.dev/api/public/themes?id=THEME_ID" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['theme']['content'])"
 ```
